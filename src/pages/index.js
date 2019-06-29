@@ -1,15 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Grid from '../components/Grid'
-import Section from '../components/Section'
+import Grid from "../components/Grid"
+import Section from "../components/Section"
+import Hero from "../components/Hero"
+import AboutMe from "../components/AboutMe"
+import PhotoTile from "../components/PhotoTile"
+
+import colors from "../constants/colors"
 
 const IndexPage = () => (
-  <Grid>
-    <Section color={'indianred'} role={'hero'} />
-    <Section color={'steelblue'} role={'main'}/>
-    <Section color={'goldenrod'} role={'photo'}/>
-  </Grid>
+    <Grid>
+        <Hero />
+        <AboutMe />
+        <PhotoTile />
+    </Grid>
 )
 
 export default IndexPage

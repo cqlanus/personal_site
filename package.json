@@ -29,7 +29,8 @@
     "eslint-plugin-react": "^7.14.2",
     "eslint-plugin-react-hooks": "^1.6.1",
     "flow-bin": "^0.102.0",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "prettier-eslint": "^9.0.0"
   },
   "keywords": [
     "gatsby"
@@ -51,7 +52,10 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "indent": ["error", 4]
+    }
   },
   "babel": {
     "presets": [
