@@ -1,18 +1,16 @@
 import React from "react"
 
 import Grid from "../components/Grid"
-import Section from "../components/Section"
 import Hero from "../components/Hero"
 import AboutMe from "../components/AboutMe"
 import PhotoTile from "../components/PhotoTile"
-
-import colors from "../constants/colors"
+import Footer from "../components/Footer"
 
 const IndexPage = () => (
     <Grid>
         <Hero />
-        <AboutMe />
         <PhotoTile />
+        <AboutMe />
     </Grid>
 )
 

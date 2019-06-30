@@ -4,7 +4,6 @@ import styled from "styled-components"
 const Container = styled.div`
   background-color: ${props => props.color || "lightgrey"};
   grid-area: ${props => props.job || "default"};
-  min-height: 5em;
   padding: 0.5em;
 `
 

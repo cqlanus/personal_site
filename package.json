@@ -17,6 +17,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-icons": "^3.7.0",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
@@ -54,7 +55,10 @@
   "eslintConfig": {
     "extends": "react-app",
     "rules": {
-      "indent": ["error", 4]
+      "indent": [
+        "error",
+        4
+      ]
     }
   },
   "babel": {
