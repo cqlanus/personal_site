@@ -1,29 +1,19 @@
 import React from "react"
 import styled from "styled-components"
 
-import LinkList from '../components/LinkList'
+import "../styles/main.css"
+
+import LinkList from "../components/LinkList"
+import Wrapper from "../components/common/Wrapper"
+import Text from "../components/common/Text"
 
 import me from "../images/me.jpg"
-
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-`
-
-const Body = styled.div`
-  max-width: 80ch;
-`
 
 const ContactInfo = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`
-
-const Text = styled.div`
-  font-family: "Courier New", Courier, monospace;
+    margin-bottom: 10vh;
 `
 
 const ImageContainer = styled.div`
@@ -32,34 +22,29 @@ const ImageContainer = styled.div`
     border-radius: 50%;
     background: url(${me});
     background-size: contain;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 `
 
 const Footer = styled.div`
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2em;
-  display: flex;
-  justify-content: center;
-  font-size: .6em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    font-size: 0.6em;
 `
 
-const Main = () => (
-    <Container>
-        <Body>
-            <ContactInfo>
-                <ImageContainer />
-                <Text>Chris Lanus</Text>
-                <Text>Software Developer</Text>
-                <Text>Chicago, IL</Text>
-                <LinkList/>
-            </ContactInfo>
-        </Body>
-        <Footer>
-            <Text>Christopher Lanus 2019</Text>
-        </Footer>
-    </Container>
+const Index = () => (
+    <Wrapper>
+        <ContactInfo>
+            <ImageContainer />
+            <Text>Chris Lanus</Text>
+            <Text>Software Developer</Text>
+            <Text>Chicago, IL</Text>
+            <LinkList />
+        </ContactInfo>
+    </Wrapper>
 )
 
-export default Main
+export default Index
