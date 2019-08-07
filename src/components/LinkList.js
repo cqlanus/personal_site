@@ -4,18 +4,23 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
 import { MdMailOutline } from "react-icons/md"
 
 const ListContainer = styled.div`
-  margin-top: 1em;
-  display: flex;
-  justify-content: space-between;
-  width: 25%;
-  align-items: center;
-  flex-wrap: wrap;
+    flex: 1;
+    display: flex;
+    margin-top: 1em;
+    align-items: center;
 `
 
 const Item = styled.li`
   list-style: none;
-  flex: 1;
+  flex-grow: 1;
+  flex-basis: 25%;  
   text-align: center;
+  margin-right: 0.5em;
+
+  :last-child {
+      margin-right: 0;
+  }
+
 `
 
 const Link = styled.a`

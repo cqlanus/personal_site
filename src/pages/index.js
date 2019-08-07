@@ -1,17 +1,40 @@
 import React from "react"
+import styled from "styled-components"
 
-import Grid from "../components/Grid"
-import Hero from "../components/Hero"
-import AboutMe from "../components/AboutMe"
-import PhotoTile from "../components/PhotoTile"
-import Footer from "../components/Footer"
+import "../styles/main.css"
 
-const IndexPage = () => (
-    <Grid>
-        <Hero />
-        <PhotoTile />
-        <AboutMe />
-    </Grid>
+import LinkList from "../components/LinkList"
+import Wrapper from "../components/common/Wrapper"
+import Text from "../components/common/Text"
+
+import me from "../images/me.jpg"
+
+const ContactInfo = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+`
+
+const ImageContainer = styled.div`
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    background: url(${me});
+    background-size: contain;
+    margin-bottom: 0.5em;
+`
+
+const Index = () => (
+    <Wrapper>
+        <ContactInfo>
+            <ImageContainer />
+            <Text>Chris Lanus</Text>
+            <Text>Software Developer</Text>
+            <Text>Chicago, IL</Text>
+            <LinkList />
+        </ContactInfo>
+    </Wrapper>
 )
 
-export default IndexPage
+export default Index
