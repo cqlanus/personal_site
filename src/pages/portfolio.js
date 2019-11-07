@@ -21,6 +21,9 @@ const Portfolio = () => (
         <Project>
             <Link target="_blank" href="https://weather.chrislanus.com">Weather App</Link>
         </Project>
+        <Project>
+            <Link target="_blank" href="https://phenology.chrislanus.com">Phenology</Link>
+        </Project>
     </Wrapper>
 )
 
